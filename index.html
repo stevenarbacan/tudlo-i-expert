@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUDLO-I</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Protest+Strike&display=swap" rel="stylesheet">
+    <script defer src="./script/script.js"></script>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="logo-container">
+        <div class="logo"></div>
+        <div class="search-bar"><input type="text" name="search" class="search-input" placeholder="Search here.."> <div class="search-btn grow"></div></div>
+      </div>
+      <div class="nav-bar">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#section-1">Home</a></li>
+          <li><a class="nav-link" href="#section-2">Latest</a></li>
+          <li><a class="nav-link" href="#section-3">About</a></li>
+          <li><a href="./upload.html">Upload</a></li>
+          <li><a class="account-btn" href="#">Account</a></li>
+        </ul>
+      </div>
+      <div class="toggle"></div>
+    </nav>
+    <section id="section-1" class="section-1">
+      <div class="main-container reverse-container">
+        <div class="container">
+          <div class="text-content-container">
+            <div class="text-header"><h1>TUDLO-I WEB APPLICATION</h1></div>
+            <div class="text-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              officiis odit numquam aspernatur, possimus in maiores molestias
+              quo quaerat, neque incidunt cumque ducimus. Doloribus ipsam autem,
+              quis dolor animi facere.
+            </div>
+            <button class="see-more-btn grow btn">See more &rarr;</button>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./img/intro.jpg" alt="" class="img-content" />
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Section 2 -->
+    <section id="section-2" class="section-2">
+      <div class="text-header latest-post"><h2>Latest Posts</h2></div>
+      <div class="tab-container">
+        <button class="tab-btn tab-1 active-tab" data-tab="1">Post 1</button>
+        <button class="tab-btn tab-2" data-tab="2">Post 2</button>
+        <button class="tab-btn tab-3" data-tab="3">Post 3</button>
+      </div>
+      <div class="main-tab-content-container">
+        <div class="tab-content-container tab-content-container-1 ">
+          <div class="profile-info"><img src="./img/profile.png" alt="" class="profile-img"><div class="name-info">Example Name1</div></div>
+          <div class="tab-header">"Article 1"</div>
+          <div class="tab-content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
+            corporis? Accusantium vero, modi neque minus cumque praesentium
+            repellat ullam aspernatur corrupti quisquam deleniti reiciendis
+            tempora velit harum architecto magnam officiis.
+          </div>
+        </div>
+
+        <div class="tab-content-container tab-content-container-2">
+          <div class="profile-info"><img src="./img/profile.png" alt="" class="profile-img"><div class="name-info">Example Name2</div></div>
+          <div class="tab-header">"Article 2"</div>
+          <div class="tab-content">
+            sit amet consectetur adipisicing elit. Tempora,
+            corporis? Accusantium vero, modi neque minus cumque praesentium
+            repellat ullam aspernatur corrupti quisquam deleniti reiciendis
+            tempora velit harum architecto magnam officiis.
+          </div>
+        </div>
+
+        <div class="tab-content-container tab-content-container-3">
+          <div class="profile-info"><img src="./img/profile.png" alt="" class="profile-img"><div class="name-info">Example Name3</div></div>
+          <div class="tab-header">"Article 3"</div>
+          <div class="tab-content">
+             Accusantium vero, modi neque minus cumque praesentium
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
+            repellat ullam aspernatur corrupti quisquam deleniti reiciendis
+            tempora velit harum architecto magnam officiis.
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section-3" class="section-3">
+      <div class="main-container">
+        <div class="container">
+          <img src="./img/about-img.jpg" alt="" class="img-content" />
+        </div>
+        <div class="container">
+          <div class="text-content-container">
+            <div class="text-header"><h2>About</h2></div>
+            <div class="text-content">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              officiis odit numquam aspernatur, possimus in maiores molestias
+              quo quaerat, neque incidunt cumque ducimus. Doloribus ipsam autem,
+              quis dolor animi facere.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+
+    <footer>
+      <p class="footer-text">&copy; 2024 ASM | All Rights Reserved</p>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="overlay hidden"></div>
+    <div class="account-modal hidden">
+      <button class="close-modal-btn">&times;</button>
+      <div class="account-main-container">
+        <h2 class="message-header-text">Account</h2>
+        <div class="account-info">
+          <img src="./img/profile.png" alt="" class="account-profile">
+          <div class="account-data"><label for="">Firstname:</label> <p>Your Firstname</p></div>
+          <div class="account-data"><label for="">Lastname:</label> <p>Your Lastname</p></div>
+        </div>
+        
+          <button class="account-logout-btn grow" type="submit">Logout</button>
+      </div>
+    </div>
+  </body>
+</html>
