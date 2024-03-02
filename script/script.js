@@ -33,8 +33,8 @@ class App {
     document.querySelector("#section-2").scrollIntoView({ behavior: "smooth" });
   }
   _gotoSection(e) {
-    e.preventDefault();
     if (!e.target.classList.contains("nav-link")) return;
+    e.preventDefault();
     const id = e.target.getAttribute("href");
     console.log(id);
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
